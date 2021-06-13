@@ -1,0 +1,215 @@
+body{
+	background: #060a1f;
+
+
+}
+
+.content{
+    
+	
+	height: 400px;
+	width: 400px;
+    border: 5px solid #000;
+    display: grid;
+    padding: 2px;
+   
+	grid-template-rows: repeat(5,1fr);
+	grid-template-columns: repeat(5,1fr);
+    background-color: #999;
+    margin-top: 50px;
+    margin-left: 50px;
+    box-shadow: 0px 0px 20px white;
+
+}
+.big{
+	font-size: 0.1px;
+}
+
+#box1{
+	background: red;
+    margin: 2px;
+
+}
+
+#box2{
+	background:white;
+	margin: 2px;
+
+}
+#box3{
+	background: blue;
+    margin: 2px;
+}
+#box4{
+	background: yellow;
+    margin: 2px;
+}
+#box5{
+	background: white;
+    margin: 2px;
+}
+#box6{
+	background: red;
+    margin: 2px;
+}
+#box7{
+	background: green;
+    border: 4px solid black;
+    margin: 1px ;
+}
+#box8{
+	background: white;
+	border: 4px solid black;
+    margin: 1px;
+}
+#box9{
+	background: green;
+	border: 4px solid black;
+    margin: 1px;
+}
+#box10{
+	background: red;
+    margin: 2px;
+}
+#box11{
+	background: blue;
+    margin: 2px;
+}
+#box12{
+	background: green;
+	border: 4px solid black;
+    margin: 1px;
+}
+#box13{
+	background: orange;
+	border: 4px solid black;
+    margin: 1px;
+}
+#box14{
+	background: red;
+	border: 4px solid black;
+    margin: 1px;   
+}
+#box15{
+	background: orange;
+    margin: 2px;
+}
+#box16{
+	background: orange;
+    margin: 2px;
+}
+#box17{
+	background: yellow;
+	border: 4px solid black;
+    margin: 1px;
+}
+#box18{
+	background: red;
+	border: 4px solid black;
+    margin: 1px;
+}
+#box19{
+	background: orange;
+	border: 4px solid black;
+    margin: 1px;
+}
+#box20{
+	background: blue;
+    margin: 2px;
+}
+#box21{
+	background: white;
+    margin: 2px;
+}
+#box22{
+	background: blue;
+    margin: 2px;
+} 
+#box23{
+	background: red;
+    margin: 2px;
+}
+#box24{
+	background: white;
+    margin: 2px;
+}
+#box25{
+	background: white ;
+    margin: 2px;
+}
+
+#submit{ 
+
+	background-color: white;
+	border-color: black;
+	border-width: 3px;
+	font-size: 30px;
+	margin-left: 225px;
+	margin-top: 10px;
+	box-shadow: 1px 1px 20px black;
+
+}
+#number{
+	margin-left: 50px;
+	height: 40px;
+	width: 100px;
+	border-radius: 10px;
+	font-size: 15px;
+}
+
+#reference{
+	border: 4px solid black;
+	margin-left: 600px;
+	margin-top: -400px;
+	border-radius: 4px;
+	background: grey;
+	display: grid;
+	height: 300px;
+	width: 300px;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	box-shadow: 1px 1px 20px white;
+}
+.small{
+	font-size: 0.1px;
+}
+
+
+#smallbox1{
+	background: red;
+    margin: 2px;
+}
+
+#smallbox2{
+	background:white;
+	margin: 2px;
+
+}
+#smallbox3{
+	background: blue;
+    margin: 2px;
+}
+#smallbox4{
+	background: yellow;
+    margin: 2px;
+}
+#smallbox5{
+	background: blue;
+    margin: 2px;
+}
+#smallbox6{
+	background: red;
+    margin: 2px;
+}
+#smallbox7{
+	background: green;
+    margin: 2px ;
+}
+#smallbox8{
+	background: white;
+    margin: 2px;
+}
+#smallbox9{
+	background: green;
+    margin: 2px;
+}
