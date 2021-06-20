@@ -166,6 +166,64 @@ document.getElementById("box25").style.background= 'url('+ position[24] +'.png)'
 
 document.getElementById("number").innerText="Moves: 0";
 moves=0;
+z++;
+if(z%2!=0){
+ y=setInterval(time);
+ l=document.getElementById("submit")
+ l.innerText="Reset";}
+ else{
+ j=document.getElementById("submit")
+ j.innerText="Start";
+ let m= document.getElementById("minute");
+let s= document.getElementById("second");
+let w= document.getElementById("ho");
+ min=0;
+ sec=0;
+ h=0;
+ m.innerText="0"+min
+ s.innerText="0"+sec
+ w.innerText="0"+h
+ clearInterval(y);
+}
+}
+let z=0;
+let y=0;
+
+let min=0;
+let sec=0;
+let h=0;
+
+function time(){
+
+let m= document.getElementById("minute");
+let s= document.getElementById("second");
+let w= document.getElementById("ho");
+sec++;
+if(sec<=9){
+s.innerText="0"+sec;}
+else{
+s.innerText=sec;}
+if(sec>99)
+{
+    min++;
+    if(min<=9){
+     m.innerText="0"+ min;}
+     else{
+    m.innerText=min;}
+    sec=0;
+    s.innerText="0"+sec;
+
+}
+if(min>59){
+        min=0;
+        m.innerText="0"+min;
+        h++;
+        w.innerText=h;
+        
+    }
+
+
+
 }
 
 
@@ -220,31 +278,31 @@ function win(){
       if(document.getElementById("smallbox"+str1).textContent=="51"||document.getElementById("smallbox"+str1).textContent=="33"){
         if(document.getElementById("box"+str).textContent=="12"||document.getElementById("box"+str).textContent=="22"||document.getElementById("box"+str).textContent=="33"||document.getElementById("box"+str).textContent=="51"||document.getElementById("box"+str).textContent=="54"){
             foul++;
-            console.log(5)
+            
         }
     }
     else if(document.getElementById("smallbox"+str1).textContent=="13"||document.getElementById("smallbox"+str1).textContent=="35"){
         if(document.getElementById("box"+str).textContent=="13"||document.getElementById("box"+str).textContent=="24"||document.getElementById("box"+str).textContent=="35"){
             foul++;
-            console.log(6)
+            
         }
     }
     else if(document.getElementById("smallbox"+str1).textContent=="21"||document.getElementById("smallbox"+str1).textContent=="55"){
         if(document.getElementById("box"+str).textContent=="21"||document.getElementById("box"+str).textContent=="31"||document.getElementById("box"+str).textContent=="41"||document.getElementById("box"+str).textContent=="44"||document.getElementById("box"+str).textContent=="55"){
            foul++;
-           console.log(7)
+           
         }
     }
     else if(document.getElementById("smallbox"+str1).textContent=="15"||document.getElementById("smallbox"+str1).textContent=="45"){
         if(document.getElementById("box"+str).textContent=="14"||document.getElementById("box"+str).textContent=="15"||document.getElementById("box"+str).textContent=="23"||document.getElementById("box"+str).textContent=="25"||document.getElementById("box"+str).textContent=="45"){
           foul++;
-          console.log(8)
+          
         }
     }
     else if(document.getElementById("smallbox"+str1).textContent=="42"){
         if(document.getElementById("box"+str).textContent=="32"||document.getElementById("box"+str).textContent=="42"||document.getElementById("box"+str).textContent=="52"||document.getElementById("box"+str).textContent=="53"){
           foul++;
-          console.log(9)
+          
         }
     }
 
@@ -258,31 +316,31 @@ function win(){
       if(document.getElementById("smallbox"+str1).textContent=="51"||document.getElementById("smallbox"+str1).textContent=="33"){
         if(document.getElementById("box"+str).textContent=="12"||document.getElementById("box"+str).textContent=="22"||document.getElementById("box"+str).textContent=="33"||document.getElementById("box"+str).textContent=="51"||document.getElementById("box"+str).textContent=="54"){
             foul++;
-            console.log(10)
+            
         }
     }
     else if(document.getElementById("smallbox"+str1).textContent=="13"||document.getElementById("smallbox"+str1).textContent=="35"){
         if(document.getElementById("box"+str).textContent=="13"||document.getElementById("box"+str).textContent=="24"||document.getElementById("box"+str).textContent=="35"){
             foul++;
-            console.log(11)
+            
         }
     }
     else if(document.getElementById("smallbox"+str1).textContent=="21"||document.getElementById("smallbox"+str1).textContent=="55"){
         if(document.getElementById("box"+str).textContent=="21"||document.getElementById("box"+str).textContent=="31"||document.getElementById("box"+str).textContent=="41"||document.getElementById("box"+str).textContent=="44"||document.getElementById("box"+str).textContent=="55"){
            foul++;
-           console.log(12)
+           
         }
     }
     else if(document.getElementById("smallbox"+str1).textContent=="15"||document.getElementById("smallbox"+str1).textContent=="45"){
         if(document.getElementById("box"+str)=="14"||document.getElementById("box"+str).textContent=="15"||document.getElementById("box"+str).textContent=="23"||document.getElementById("box"+str).textContent=="25"||document.getElementById("box"+str).textContent=="45"){
           foul++;
-          console.log(13)
+          
         }
     }
     else if(document.getElementById("smallbox"+str1).textContent=="42"){
         if(document.getElementById("box"+str).textContent=="32"||document.getElementById("box"+str).textContent=="42"||document.getElementById("box"+str).textContent=="52"||document.getElementById("box"+str).textContent=="53"){
           foul++;
-          console.log(14)
+          
         }
     }
 
@@ -292,10 +350,16 @@ function win(){
 }
 
 i++;
-console.log(foul);
+
 if(foul==9){
-alert("You win");
-document.getElementById("submit").innerText("Reset");
+
+alert("You win!!");
+let score= 0.5*moves;
+scr=score.toString();
+alert("Your score is " + scr )
+clearInterval(y);
+l=document.getElementById("submit")
+l.innerText="Reset";
 }
 }
 
@@ -660,16 +724,6 @@ function move(pos){
 
                     }
             }
-
-
-
-
-
-
-
-
-
-
 
 
 
